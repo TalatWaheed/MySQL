@@ -13,5 +13,6 @@ constraint Pk_Student primary key(ID,LastName)
 );
 
 Here It will create table name Students with ID not null field,LastName not null field,FirstName not null field,Age and Sub field
+"Pk_Student" is constraint name you can define whatever you want
 Composite primary key constraint applied on two columns "ID" and "LastName"
 
