@@ -21,3 +21,37 @@ While you need to ensure that the value is present in a primary key column while
 
 If you want to delete Primary Key, then make sure the referencing foreign key does not contain its value.
 The foreign key value can be removed from the table without bothering that it refers to the primary key of another table.
+
+Primary Key Example----
+
+create table School
+(
+Name varchar(15) NOT NULL,
+RollNo int(5),
+Age int(3),
+constraint consname primary key(Name)
+);
+
+Here it will create table with name "School" and First Column name is "Name", Second Column name is "RollNo", Third Column name is "Age"
+and "consname" is constraint name(You can defind whatever you want). 
+Primary key constraint applied on "Name" column that's why name column cannot accept duplicated and null values in it
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Foreign Key Example---
+
+create table Student
+(
+Name varchar(15) NOT NULL,
+RollNo int(5),
+Sub varchar(20),
+ScholarNo int(10),
+constraint mycons foreign key(Name) references School(Name)
+);
+
+Here Foreign key refers to primary key in another table("School"table)
+
+This Query will create table name "Student" with Name is not null field, RollNo, Sub, ScholarNo fields
+Foreign key constraint applied on "Name" column in "Student"table that referencing to "School" table's (Name)
+
+By definition Foreign key refers to primary key of another table
+
