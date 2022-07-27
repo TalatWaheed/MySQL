@@ -1,0 +1,23 @@
+Primary Key uniquely identify each record in a table
+Foreign Key is used to link two tables together to uniquely identify a row of the same table or another table
+
+Primary Key must containt UNIQUE value and cannot contain NULL values
+Foreign Key can have duplicate values and accept NULL Value
+
+A table can have only one Primary Key
+A table can have more than one Foreign Key
+
+A table that contains the Primary Key is called the "Parent Table"
+A table that contains Foreign Key is called the "Child Table"
+
+Primary Key cannot create parent-child relationship in a table
+Foreign Key can make a parent-child relationship in a table
+
+Primary Key constraint can defind on temporary files
+Foreign Key constraint cannot defind on temporary files
+
+You can insert the values into the primary key column without any limitation.
+While you need to ensure that the value is present in a primary key column while inserting values in the foreign key table
+
+If you want to delete Primary Key, then make sure the referencing foreign key does not contain its value.
+The foreign key value can be removed from the table without bothering that it refers to the primary key of another table.
