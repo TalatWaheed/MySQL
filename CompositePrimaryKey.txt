@@ -1,0 +1,17 @@
+When more than one field is used for making a primary key, then it is called "Composite Primary Key"
+
+For Example---
+
+Create table Students
+(
+ID int(5) NOT NULL,
+LastName varchar(10) NOT NULL,
+FirstName varchar(20) NOT NULL,
+Age int(3),
+Sub varchar(30),
+constraint Pk_Student primary key(ID,LastName)
+);
+
+Here It will create table name Students with ID not null field,LastName not null field,FirstName not null field,Age and Sub field
+Composite primary key constraint applied on two columns "ID" and "LastName"
+
