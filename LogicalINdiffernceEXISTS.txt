@@ -1,0 +1,54 @@
+
+Logical IN Operator
+It gives you TRUE if the operand is equal to one of a list of expressions	
+
+For Example-
+
+select *from Customers where Address in ('America','Libya');
++------+--------------+-------------+---------+--------+------+
+| ID   | CustomerName | ContactName | Address | Salary | Age  |
++------+--------------+-------------+---------+--------+------+
+|    1 | Alen         | Joe         | America |  25000 |   30 |
+|    8 | Celena       | Kity        | libya   | 200000 |   40 |
++------+--------------+-------------+---------+--------+------+
+----------------------------------------------------------------------------------------------------
+
+Logical EXISTS Operator
+It gives you TRUE if the subquery returns one or more records	
+OR
+It is a type of Boolean operator which returns the true or false
+It is used in combination with a subquery and checks the existence of data in a subquery
+
+select *from Students;
++--------+---------+-----------+------+
+| RollNo | Name    | Subject   | Age  |
++--------+---------+-----------+------+
+|      1 | Ross    | English   |   10 |
+|      2 | Lisa    | Physics   |   11 |
+|      3 | Jessica | Chemistry |    9 |
+|      4 | Lucy    | Biology   |   17 |
+|      5 | Helen   | Music     |   15 |
+|      6 | Peter   | Computer  |   16 |
+|      7 | Jenny   | Geography |   19 |
++--------+---------+-----------+------+
+
+select *from Employees;
++-------+-------+--------+-----------+------------+--------------+
+| EmpId | Name  | EmpAge | Country   | Department | AnnualSalary |
++-------+-------+--------+-----------+------------+--------------+
+|     1 | Ross  |     30 | Canada    | IT         |       150000 |
+|     2 | Lily  |     30 | Japan     | Finance    |       200000 |
+|     3 | Harry |     40 | Oman      | HR         |        90000 |
+|     4 | John  |     39 | America   | PC         |       250000 |
+|     5 | Liza  |     45 | Greenland | Creativity |       100000 |
++-------+-------+--------+-----------+------------+--------------+
+
+select RollNo,Name from Students where exists(select *from Employees where Students.Name = Employees.Name)
+;
+
+OUTPUT -
++--------+------+
+| RollNo | Name |
++--------+------+
+|      1 | Ross |
++--------+------+
