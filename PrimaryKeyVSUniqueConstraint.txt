@@ -1,0 +1,14 @@
+Difference between Primary Key Constraint and Unique Constraint
+
+Primary key Constraint                                       |  Unique Constraint
+
+1. You can have only one Primary key constraint per table    |1.  You can have multiple Unique constraints per table
+2. Cannot allow null values                                  |2.  It can allow null values
+                                                             |
+3. Syntax                                                    |3.  Syntax 
+CREATE  TABLE table_name(                                    |  CREATE  TABLE table_name(
+column1 datatype  NOT NULL,                                  |  column1 datatype  NOT NULL,
+column2 datatype  NOT NULL,                                  |  column2 datatype,
+PRIMARY KEY(column1)                                         |  UNIQUE(column1)
+);                                                           |   );
+                                                        
