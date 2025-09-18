@@ -1,0 +1,50 @@
+##   MySQL Functions
+(1)STRING functions
+(i) CONCAT()
+
+mysql> SELECT CONCAT("Talat"," ","Waheed");
++------------------------------+
+| CONCAT("Talat"," ","Waheed") |
++------------------------------+
+| Talat Waheed                 |
++------------------------------+
+1 row in set (0.00 sec)
+
+(ii) LENGTH()
+mysql> SELECT LENGTH("Mathematics");
++-----------------------+
+| LENGTH("Mathematics") |
++-----------------------+
+|                    11 |
++-----------------------+
+1 row in set (0.01 sec)
+
+(iii) SUBSTRING()
+
+mysql> SELECT SUBSTRING("Database",2,3);
++---------------------------+
+| SUBSTRING("Database",2,3) |
++---------------------------+
+| ata                       |
++---------------------------+
+1 row in set (0.01 sec)
+
+(iv) LOWER()
+
+mysql> SELECT LOWER("HELLO");
++----------------+
+| LOWER("HELLO") |
++----------------+
+| hello          |
++----------------+
+1 row in set (0.01 sec)
+
+(v) UPPER()
+
+mysql> SELECT UPPER("database");
++-------------------+
+| UPPER("database") |
++-------------------+
+| DATABASE          |
++-------------------+
+1 row in set (0.00 sec)
