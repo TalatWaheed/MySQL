@@ -20,14 +20,27 @@ How to run: mysql -u root -p < top_10_mysql_interview_questions.sql
 Coverage: Subqueries, CTEs, Window Functions (DENSE_RANK, LEAD), Self-Joins, HAVING, and Conditional Aggregation.
 
 
-===============================================================
+===============================================================   
 FOR FILE "mysql_ctes_tutorial.sql"
 
 Prerequisites: MySQL 8.0 or newer (CTEs are supported in MySQL 8.0+).
 
 Execution: mysql -u root -p < mysql_ctes_tutorial.sql
 
-===============================================================
+===============================================================    
+FOR FILE "database.setup.sql"
+
+mysql-python-automation/
+├── .env.example
+├── .gitignore
+├── README.md
+├── requirements.txt
+├── database_setup.sql
+├── config.py
+└── automate_reports.py
+
+===============================================================    
+
 
 # MySQL
 MySQL Playlist
