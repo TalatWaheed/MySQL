@@ -21,8 +21,12 @@ Coverage: Subqueries, CTEs, Window Functions (DENSE_RANK, LEAD), Self-Joins, HAV
 
 
 ===============================================================
-CTEs are supported in MySQL version 8.0 and above.
+FOR FILE "mysql_ctes_tutorial.sql"
+Prerequisites: MySQL 8.0 or newer (CTEs are supported in MySQL 8.0+).
 
+Execution: mysql -u root -p < mysql_ctes_tutorial.sql
+
+===============================================================
 
 # MySQL
 MySQL Playlist
