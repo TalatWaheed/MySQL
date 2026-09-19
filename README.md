@@ -12,7 +12,7 @@ Prerequisites (MySQL 8.0+ / MySQL Workbench).
 
 How to run the script (SOURCE path/to/schema_and_queries.sql;).
 
-==============================================================
+==============================================================  
 FOR FILE "top_10_mysql_interview_questions.sql"
 
 How to run: mysql -u root -p < top_10_mysql_interview_questions.sql
@@ -22,6 +22,7 @@ Coverage: Subqueries, CTEs, Window Functions (DENSE_RANK, LEAD), Self-Joins, HAV
 
 ===============================================================
 FOR FILE "mysql_ctes_tutorial.sql"
+
 Prerequisites: MySQL 8.0 or newer (CTEs are supported in MySQL 8.0+).
 
 Execution: mysql -u root -p < mysql_ctes_tutorial.sql
