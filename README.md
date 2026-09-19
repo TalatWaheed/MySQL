@@ -1,3 +1,11 @@
+
+
+Prerequisites (MySQL 8.0+ / MySQL Workbench).
+
+How to run the script (SOURCE path/to/schema_and_queries.sql;).
+
+
+
 # MySQL
 MySQL Playlist
 https://www.youtube.com/playlist?list=PLLThphyUMHekLuvooTOO8cHEJ2gssHN8U
